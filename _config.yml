@@ -1,0 +1,40 @@
+#
+# Blog Settings
+#
+author: Jay Turpin
+description: Really
+url: http://jayturpin.com
+title: Hair of the Dog
+subtitle: ...that bit you
+gravatar_url: /images/signals_gravatar.jpg
+subscribe_rss: http://feeds.jayturpin.com
+
+# Github repositories
+github_user: turp
+github_repo_url: https://github.com/turp/jayturpin.com/
+
+# Twitter
+twitter_user: turp
+twitter_tweet_button: true
+
+# Disqus Comments
+disqus_short_name: niprut
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-63057879-1
+
+#
+# Jekyll Settings
+#
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+permalink: /archive/:year/:month/:day/:title/
+paginate: 20
+paginate_path: "page/:num"
+category_dir: categories
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
