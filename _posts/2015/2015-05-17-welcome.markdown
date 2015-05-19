@@ -8,7 +8,8 @@ categories: [personal]
 
 ## Jay Turpin
 
-![Jay Turpin](/images/JayTurpin-300x300.jpg)
+<img src="/images/JayTurpin-300x300.jpg" alt="Jay Turpin" height="100" width="100">
+
 I'm a big dog owner, beer brewer, father of two and husband of one for over two decades. 
 
 I have been developing software since 1993, and am passionate about new technologies and practices. 
