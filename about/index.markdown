@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "Jay Turpin"
 date: 2015-05-17 -0800
 comments: false
 disqus_identifier: 10811
@@ -8,9 +8,7 @@ categories: [personal]
 sharing: false
 ---
 
-## Jay Turpin
-
-![Jay Turpin](/images/JayTurpin-300x300.jpg)
+<img src="/images/JayTurpin-300x300.jpg" height="125" width="125" class="pull-left"> I'm a big dog owner, beer brewer, father of two and husband of one for over two decades.
 I'm a big dog owner, beer brewer, father of two and husband of one for over two decades. 
 
 I have been developing software since 1993, and am passionate about new technologies and practices. 

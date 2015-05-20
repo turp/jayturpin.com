@@ -407,6 +407,19 @@ article .entry-content .video-container embed {
     .post h1.title,
     .post .entry-content { margin-left: 0 }
 }
+
+img.pull-left{
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+img.pull-right{
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
 .meta {
     margin-left: 4px;
     color: #999;
