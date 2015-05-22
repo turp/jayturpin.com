@@ -214,7 +214,7 @@ a {
 }
 #sub-nav .social a.rss:hover { border: 1px solid #cf5d0f }
 #pagenavi {
-    padding: 20px 0;
+    padding: 10px 0px 30px 0px;
     height: 20px;
     line-height: 20px;
     position: relative;
@@ -489,7 +489,7 @@ img.pull-right{
 footer {
     border-top: 1px solid #fff;
     font-size: 0.9em;
-    font-family: calibri, arial, helvetica, san-serif;
+    font-family: 'Open Sans', calibri, arial, helvetica, san-serif;
     text-align: left;
     max-width: 800px;
     padding: 20px;
@@ -512,7 +512,7 @@ ul li a { -webkit-transition: all .2s ease-in;-moz-transition:all .2s ease-in;-o
 .container .mid-col { position: absolute;right:0;min-height:100%;width:77%;background:#fff }
 .container .mid-col #banner { width: 100% }
 .container .mid-col #banner small { margin-right: 70px }
-.container .mid-col footer.inner { text-align: center;margin:0px 70px 0px 40px;width:auto }
+.container .mid-col footer.inner { text-align: center; width:auto }
 .container .mid-col .mid-col-container { padding: 0px 70px 0px 100px;max-width: 90% }
 #content { width: 100% }
 #content article { border-top: none;padding:80px 0px }
