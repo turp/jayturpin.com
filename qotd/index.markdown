@@ -5,13 +5,24 @@ title: "Quote of the Day"
 date: 2015-05-17 -0800
 comments: false
 ---
-<link rel="alternate" type="application/json" href="/qotd/json">
 
-> <h3 id="qq">{{quote}}</h3>
+<div class="row">
+  <div class="col-xs-12">
+  <a class="btn btn-default getAnotherQuote" href="#">
+    refresh <i class="fa fa-refresh "></i>
+  </a>
+  </div>
+</div>
 
-<p><em>- <span id="aa">{{author}}</span></em></p>
+<div class="row">
+  <div class="col-xs-12">
 
-<p><button id="getAnotherQuote">See Another Quote</button></p>
+    <blockquote>
+    	<h3 id="qq">{{quote}}</h3>
+    </blockquote>
+    <p><em>- <span id="aa">{{author}}</span></em></p>
+  </div>
+</div>
 
 <script>
   var quotes = [
@@ -38,9 +49,9 @@ comments: false
   var getAnotherQuote = function() {
     var qotd = random();
     $("#qq").html(qotd.quote);
-    $("#aa").html(qotd.author);    
+    $("#aa").html(qotd.author);  
   };
   
-  $("#getAnotherQuote").click(getAnotherQuote);
+  $(".getAnotherQuote").click(getAnotherQuote);
   getAnotherQuote();
 </script>
