@@ -6,9 +6,7 @@ comments: false
 categories: [personal]
 ---
 
-## Jay Turpin
-
-<img src="/images/JayTurpin-300x300.jpg" height="100" width="100" class="pull-left"> I'm a big dog owner, beer brewer, father of two and husband of one for over two decades. I have been developing software since 1993, and am passionate about new technologies and practices. 
+<img src="/images/JayTurpin-300x300.jpg" height="100" width="100" class="pull-left"> My name is Jay Turpin. I'm a big dog owner, beer brewer, father of two and husband of one for over two decades. I have been developing software since 1993, and am passionate about new technologies and practices. 
 
 As a software developer currently working at Intel Corporation, I am an outspoken proponent of agile practices and have been employed them on over a half dozen teams since 2001. 
 
