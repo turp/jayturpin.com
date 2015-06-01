@@ -10,11 +10,11 @@ For teams interested in becoming agile, pair programming is an enabling practice
 
 For teams interested in improving code quality, team cohesiveness, and increasing knowledge across the team, pair programming will help.
 
-Basically, if you’re not pair programming, you’re just doing it wrong.
+Basically, if you’re *not* pair programming, you’re just doing it wrong.
 
 #### On most teams...
 
-No opportunity to learn new skills. Single points of failure. Poor design. Poor quality. Ineffective code reviews. 
+...there is no opportunity to learn new skills. Single points of failure. Poor design. Poor quality. Ineffective code reviews. 
 
 These are problems faced by software teams every day. 
 
@@ -37,6 +37,19 @@ Practitioners have found that pair programming solves many problems:
 * Knowledge sharing - when working closely together, developers learn from each other. Keyboard shortcuts, new tools, programming techniques and even new languages are learned on a daily basis.
 
 #### What don't we pair?
+
+* My team is not co-located
+* Office layout doesn't support pairing
+* Everyone has their own set of priorities, so if I asked someone to pair on my task, it takes them away from their priority
+* Incompatible skill levels
+* Incompatible personalities
+* Management doesn't support pairing
+* Pair programming doesn't work with our Rally/JIRA setup
+* Budget is tight. We only have enough money for 4 developers, there is not enough money for 8.
+* We only pair on complex items, not unit tests or bug fixes
+* I'm going to slow my pair down
+
+
 
 "One barrier is that the people I pair with are not nearby." 
 

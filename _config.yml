@@ -7,7 +7,7 @@ url: http://jayturpin.com
 title: Hair of the Dog
 subtitle: ...that bit you
 gravatar_url: /images/signals_gravatar.jpg
-subscribe_rss: http://feeds.jayturpin.com
+subscribe_rss: http://feeds.feedburner.com/jayturpin/blog
 
 # Github repositories
 github_user: turp
@@ -18,7 +18,7 @@ twitter_user: turp
 twitter_tweet_button: true
 
 # Disqus Comments
-disqus_short_name: niprut
+disqus_short_name: jayturpin
 disqus_show_comment_count: true
 
 # Google Analytics
