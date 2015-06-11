@@ -2,8 +2,8 @@
 
 # Pair Programming
 
-<div class="CSSForDevelopers">
-  <div class="CSSForDevelopers-text">You're Doing It Wrong</div>
+<div class="wrong">
+  <div class="wrong-text">You're Doing It Wrong</div>
 </div>
 
 ## <!-- .element: style="text-transform: lowercase;" --> by  [Jay Turpin](jay.turpin@intel.com) [@turp](http://twitter.com/turp)
