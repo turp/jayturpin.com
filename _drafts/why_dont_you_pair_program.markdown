@@ -12,7 +12,7 @@ For teams interested in improving code quality, team cohesiveness, and increasin
 
 Basically, if you’re *not* pair programming, you’re just doing it wrong.
 
-#### On most teams...
+## On most teams...
 
 ...there is no opportunity to learn new skills. Single points of failure. Poor design. Poor quality. Ineffective code reviews. 
 
@@ -20,7 +20,7 @@ These are problems faced by software teams every day.
 
 Developers want to learn new skills. Managers want software delivered on time. Developers want to be able to go on vacation without being tied to Outlook. Managers want to prevent a project from being cratered when a developer leaves the company. 
 
-#### Pair programming is the answer
+## Pair programming is the answer
 
 Over 15 years ago, Kent Beck introduced the concept of pair programming to the world in his seminal book Extreme Programming Explained: Embrace Change. He didn’t invent the practice (it has been around for decades), but he certainly did raise awareness of it among thousands of developers worldwide.
  
@@ -32,11 +32,22 @@ Some people say “that is inefficient”. But as Martin Fowler once quipped, �
 
 Practitioners have found that pair programming solves many problems:
 
-* 	Just-in-time code review – rather than waiting for days, weeks or even months for code to be reviewed by the rest of the team, another person is performing a review in real time, influencing the design a little bit at a time.
+* Verbalization - when you talk about a design or bug with someone, it highlights flaws in the logic that, for some reason, are obscured when merely thinking about the issue.
+* Just-in-time code review – rather than waiting for days, weeks or even months for code to be reviewed by the rest of the team, another person is performing a review in real time, influencing the design a little bit at a time.
 * Cross-training – rather than only one person owning an application or submodule, there is now at least two people who understand the logic. This reduces the risk for managers if an employee leaves the company, and allows employees to take vacation without worry.
 * Knowledge sharing - when working closely together, developers learn from each other. Keyboard shortcuts, new tools, programming techniques and even new languages are learned on a daily basis.
 
-#### What don't we pair?
+## What don't we pair?
+
+Over the years, I've dozens (hundreds?) of reasons of why people don't pair program. Even though the details differ, they tend to boil down down to the following:
+
+### Pairing is inefficient
+
+The common belief is you are dedicating two people to do the work that one person was doing. Twice the resources, same output.
+
+But ask yourself: how many times in your career have you spent hours, or days, working on a task (whether it was developing a new feature or fixing a bug) and just couldn't quite get it working? And then, miraculously, you walk down the hall to talk to someone about the issue and the solution presents itself. Sometimes, they don't even have to speak; that act of verbalizing the problem is enough to allow you to look at it from a different angle and see the solution more clearly.
+
+Pairing forces you to verbalize early. The pair discusses the design to solve a problem before they attempt to implement it. And then they keep discussing it while they implement, making course corrections as they go. 
 
 * My team is not co-located
 * Office layout doesn't support pairing
