@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Is The Tesla Powerwall Worth It?"
+comments: true
 categories: [geek]
 ---
 ![Tesla Powerwall](http://www.teslamotors.com/sites/default/files/images/powerwall/section-hero@2x.jpg)
