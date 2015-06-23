@@ -13,8 +13,8 @@ sharing: false
 
 I have been developing software since 1993, and am passionate about new technologies and practices. 
 
-As a software developer currently working at Intel Corporation, I am an outspoken proponent of agile practices and have been employed them on over a half dozen teams since 2001. 
+As a software developer currently working at Intel Corporation, I am an outspoken proponent of agile practices and have employed them on over a half dozen teams since 2001. 
 
-Over the years, I have taught numerous agile classes, given presentations and coached teams on how to take the first step in their journey towards becoming agile.
+Over the years, I have taught numerous agile classes, given presentations and coached teams on how to take the first steps in their journey towards becoming agile.
 
 I love coding. My day-to-day work is primarily focused on Typescript and Angular on the front-end, C# and SQL Server on the backend. I love Ruby and have used it for build scripts for years.
