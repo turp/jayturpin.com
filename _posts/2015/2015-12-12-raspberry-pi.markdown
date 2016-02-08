@@ -26,8 +26,6 @@ Next I started following the instructions in the Instructables article
 
 I setup a static IP address by right-clicking on my wifi connection and selecting WiFi Networks (dhcpcdui) Settings. Select interface and wlan0 and set the IP address and Router number
 
-![WiFi Networks (dhcpcdui) Settings](/images/raspberry-pi/network-settings.jpg)
-
 ## Install Telnet
 
 Next, I [installed telnet](http://www.ronnutter.com/raspberry-pi-enabling-telnet/):
