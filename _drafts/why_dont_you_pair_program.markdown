@@ -10,8 +10,6 @@ For teams interested in becoming agile, pair programming is an enabling practice
 
 For teams interested in improving code quality, team cohesiveness, and increasing knowledge across the team, pair programming will help.
 
-Basically, if you’re *not* pair programming, you’re just doing it wrong.
-
 ## On most teams...
 
 ...there is no opportunity to learn new skills. Single points of failure. Poor design. Poor quality. Ineffective code reviews. 
