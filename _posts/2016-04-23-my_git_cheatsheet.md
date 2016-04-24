@@ -15,7 +15,7 @@ Add the following lines to your **.gitconfig** (found in c:\users\your_idsid)
 
 	[user]
 	    name = Your Name
-	    email = your.name@intel.com
+	    email = your.name@company.com
 	[credential]
 	[http]
 	    proxy = http://your-proxy.company.com:8080
@@ -24,7 +24,7 @@ Add the following lines to your **.gitconfig** (found in c:\users\your_idsid)
 	[push]
 	    default = simple
 	[url "https://"]   
-    	    insteadOf = git://
+    	insteadOf = git://
 	
 	[alias]
 	    co = checkout
