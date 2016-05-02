@@ -46,6 +46,8 @@ Now setup jspm:
  
 The default transpiler is [Babel](), but I prefer [Typescript]()
 
+> Note: If you encounter errors running jspm *and* you are behind a firewall, you are probably missing the HTTP\_PROXY environment variable. On windows, try running SET HTTP\_PROXY={YOUR PROXY SERVER} (Example: SET HTTP\_PROXY=http://proxy.mycompany.com:8080)
+    
 Now pull in Aurelia:
 
 	jspm install aurelia-framework
