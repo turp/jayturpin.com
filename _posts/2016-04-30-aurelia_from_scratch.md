@@ -24,11 +24,12 @@ Create a new directory and open a command prompt. First, lets initialize our nod
 
 Just accept all of the defaults. Now we'll install the [jspm](http://jspm.io/). jspm is a package manager for the SystemJS universal module loader, built on top of the dynamic ES6 module loader
 
-	npm install babel-register --save-dev
-	npm install babel --save-dev
 	npm install jspm --save-dev
 
-Technically, you shouldn't have to install babel and babel-register first, but for some reason, on my Windows machine, unless I do, I get an error when installing jspm. Your results may vary.
+> Note: Depending upon the windows environment I run this command on, sometimes this fails. For instance, on my laptop, I had to run the following commands first inorder to to get it to work properly
+
+	npm install babel-register --save-dev
+	npm install babel --save-dev
 
 Now setup jspm:
 
@@ -88,9 +89,15 @@ We're almost there. Now we need some way to serve up our website. We will use th
 
 	npm install browser-sync --save-dev
 
+And the scripts section in your package.json with:
+	
+	"scripts": {
+		"serve": "browser-sync start --server --files *.*"
+	},
+
 Now let's see if it works
 
-	node node_modules\browser-sync\bin\browser-sync.js start --server --files *.*
+	npm run serve
 
 If everything is setup properly, your browser should be opened to [http://localhost:3000/](http://localhost:3000/) and you should briefly see a green "Loaded with System" notification pop up for a couple seconds.
 
@@ -98,7 +105,7 @@ If everything is setup properly, your browser should be opened to [http://localh
 
 Now let's add a [Typescript](http://typescriptlang.org) 
 
-First, add a Typescript config file, tsconfig.json:
+First, add a Typescript configuration file, tsconfig.json:
 
 	{
 	  "compilerOptions": {
@@ -123,7 +130,7 @@ Now, let's update our tooling:
 
 	npm install concurrently --save-dev
 
-And add the following to the package.json
+And replace the scripts section in package.json with:
 	
 	"scripts": {
 		"start": "tsc && concurrently \"npm run tsc:w\" \"npm run serve\" ",
@@ -158,9 +165,14 @@ Since your browser can't directly interpret Typescript, you have to transpile it
 
 	npm run tsc
 
-At first, you'll get some errors because it doesn't know what toastr is. We need to install the typing files:
+At first, you'll get some errors because it doesn't know what toastr is. We need to install the type definition files.
+
+First install the [Typescript Definition Manager](https://github.com/typings/typings) globally:
 
 	npm install typings -g
+
+Now, install the type definition files for toastr and jquery:
+
 	typings install toastr --ambient --save
 	typings install jquery --ambient --save
 
@@ -170,7 +182,7 @@ Now try it again
 
 and you should see app.js generated 
 
-Next, add the template file app.html:
+In Aurelia, every view model needs a corresponding template file, so let's create app.html:
 
 	<template>
 		<form submit.delegate="submit()">
@@ -196,6 +208,27 @@ Now spin up browser-sync again using your brand new NPM script:
 
 This command compiles all of your typescript files, watching them and recompiling them when you make changes and concurrently, starts up browser-sync.
 
+You should now see a page with two text boxes, allowing you to specify the title and message you want to display in a toast.
+
+If you want to see browser-sync in action, add a header to  the app.html and save the file.
+
+	<template>
+		<h1>Toastr Message Generator</h1>
+		<form submit.delegate="submit()">
+			<input type="text" value.bind="title" placeholder="Enter title" />
+			<input type="text" value.bind="message" placeholder="Enter message" />
+			<button type="submit">Show toastr</button>
+		</form>
+	</template>
+
+
+And the browser will automatically refresh.
+
+# Summary
+
+Even though Aurelia offers a comprehensive set of [skeleton projects](http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.2.2/doc/article/getting-started) to kick start your development efforts, I find it useful to walk through the steps myself so I can gain a better understanding of how everything works together. Hopefully, you found this article useful.
+
+Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch). 
 # Acknowledgments
  
-Thanks to [Florian Verdonck](http://nojaf.com/2015/07/08/using-toastr-with-aurelia/) for a great article! 
+Thanks to [Florian Verdonck](http://nojaf.com/2015/07/08/using-toastr-with-aurelia/) for a great article that helped me put a lot of these pieces together! 
