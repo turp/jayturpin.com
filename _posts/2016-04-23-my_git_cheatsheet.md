@@ -4,8 +4,6 @@ title: "My Git Cheatsheet"
 categories: [git, development]
 ---
 
-# My Git Cheatsheet
-
 I collected tips and tricks for using [Git](https://git-scm.com/) and [Github](https://github.com) from many places over the years. This is my attempt to consolidate some of this knowledge into a single spot. I am primarily a Windows user, so some of the file paths may be different in your environment.
 
 ## .gitconfig file
@@ -53,6 +51,7 @@ There are other good clients available too: [Atlassian Sourcetree](https://www.s
 
 But for raw speed, sometimes the command line is best. Navigate to a local directory where you want to store you repositories and open a command prompt.
 
+
 ### Clone
 
 The first time you work on a project, you will need to [clone](http://git-scm.com/docs/git-clone), or download, the repository to your machine. 
@@ -61,6 +60,7 @@ Get the URL for the repo (you can find it on the main page of any github project
 
     git clone url_for_git_repo
 
+	
 ### Checkout
 
 Before creating a new branch or continuing work on master, make sure that your working directory is up to date with the server (origin). First run [pull](http://git-scm.com/docs/git-pull):
@@ -76,6 +76,7 @@ This command will update any [submodules](http://git-scm.com/docs/git-submodule)
 You can execute both of these commands by simply running the alias (from your .gitignore file):
 
     git up
+
 
 ### Commit
 
@@ -100,6 +101,7 @@ You must specify a comment.
 This activity is performed so often, you should use the following alias:
 
 	git cm "PUT YOUR COMMENT HERE"
+
 
 ### Push
 
