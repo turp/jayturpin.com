@@ -236,6 +236,7 @@ And the browser will automatically refresh.
 Even though Aurelia offers a comprehensive set of [skeleton projects](http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.2.2/doc/article/getting-started) to kick start your development efforts, I find it useful to walk through the steps myself so I can gain a better understanding of how everything works together. Hopefully, you found this article useful.
 
 Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch).
+
 # Acknowledgments
 
 Thanks to [Florian Verdonck](http://nojaf.com/2015/07/08/using-toastr-with-aurelia/) for a great article that helped me put a lot of these pieces together!
