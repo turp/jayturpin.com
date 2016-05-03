@@ -48,10 +48,6 @@ The default transpiler is [Babel](https://babeljs.io/), but I prefer [Typescript
 
 > Note: If you encounter errors running jspm *and* you are behind a firewall, you are probably missing the HTTP\_PROXY environment variable. On windows, try running SET HTTP\_PROXY={YOUR PROXY SERVER} (Example: SET HTTP\_PROXY=http://proxy.mycompany.com:8080)
 
-Install the Typescript transpiler locally (this helps prevent conflicts with other versions of Typescript installed on your system):
-
-	npm install typescript --save-dev
-
 Now pull in Aurelia:
 
 	jspm install aurelia-framework
@@ -109,7 +105,7 @@ If everything is setup properly, your browser should be opened to [http://localh
 
 # Typescript
 
-Now let's add a [Typescript](http://typescriptlang.org)
+Now let's add a [Typescript](http://typescriptlang.org) view model
 
 First, add a Typescript configuration file, tsconfig.json:
 
@@ -135,6 +131,7 @@ First, add a Typescript configuration file, tsconfig.json:
 Now, let's update our tooling:
 
 	npm install concurrently --save-dev
+	npm install typescript --save-dev
 
 And replace the scripts section in package.json with:
 
