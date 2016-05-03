@@ -4,11 +4,11 @@ title: "Aurelia From Scratch"
 categories: [web frameworks, aurelia]
 ---
 
-[Rob Eisenberg](http://eisenbergeffect.bluespire.com/) first showed up on my radar in 2010 when he presented at the MIX conference. His presentation, [Build Your Own MVVM Framework in 500 Lines](http://channel9.msdn.com/Events/MIX/MIX10/EX15) blew me away. 
+[Rob Eisenberg](http://eisenbergeffect.bluespire.com/) first showed up on my radar in 2010 when he presented at the MIX conference. His presentation, [Build Your Own MVVM Framework in 500 Lines](http://channel9.msdn.com/Events/MIX/MIX10/EX15) blew me away.
 
 You see, at the time, Silverlight was the hot new technology and average developers, like me, struggled to understand all the intricacies of data binding and commands. Rob, without a lot of flash, demonstrated how to get rid of a ton a boilerplate code and simplify wiring up the view model to the view.
 
-From those humble beginnings, Rob expanded on his framework to create [Caliburn.Micro](http://caliburnmicro.com/). In his words, "A small, yet powerful framework, designed for building applications across all XAML platforms". 
+From those humble beginnings, Rob expanded on his framework to create [Caliburn.Micro](http://caliburnmicro.com/). In his words, "A small, yet powerful framework, designed for building applications across all XAML platforms".
 
 Fast-forward a couple years, and Rob turned his attention to Javascript and created [Durandal](http://durandaljs.com/). This lightweight framework brought many of application design concepts to the wild world of Javascript development. It provided strong support for MVC, MVP and MVVM. It is still an excellent framework if you need to use legacy browsers.
 
@@ -43,11 +43,15 @@ Now setup jspm:
 	Enter client baseURL (public folder URL) [/]:
 	Do you wish to use a transpiler? [yes]:
 	Which ES6 transpiler would you like to use, Babel, TypeScript or Traceur? [babel]:typescript
- 
+
 The default transpiler is [Babel](https://babeljs.io/), but I prefer [Typescript](http://typescriptlang.org)
 
 > Note: If you encounter errors running jspm *and* you are behind a firewall, you are probably missing the HTTP\_PROXY environment variable. On windows, try running SET HTTP\_PROXY={YOUR PROXY SERVER} (Example: SET HTTP\_PROXY=http://proxy.mycompany.com:8080)
-    
+
+Install the Typescript transpiler locally (this helps prevent conflicts with other versions of Typescript installed on your system):
+
+	npm install typescript --save-dev
+
 Now pull in Aurelia:
 
 	jspm install aurelia-framework
@@ -55,7 +59,7 @@ Now pull in Aurelia:
 	jspm install jquery
 	jspm install toastr
 
-If you're interested in what just happened, take a peak in the config.js file. When "jspm install" is run, it looks in the global [jspm registry](https://github.com/jspm/registry/blob/master/registry.json) to determine where the library and its dependencies are located. Most popular javascript libraries are already registered there. 
+If you're interested in what just happened, take a peak in the config.js file. When "jspm install" is run, it looks in the global [jspm registry](https://github.com/jspm/registry/blob/master/registry.json) to determine where the library and its dependencies are located. Most popular javascript libraries are already registered there.
 
 If a library is not listed in that registry, you can still install it. For instance, even though [pace](https://github.com/HubSpot/PACE) is a handy library to automatically add a progress bars to your web application. If you want to install it using jspm, you can reference it's GitHub repository:
 
@@ -65,7 +69,7 @@ or it's npm package
 
 	jspm install pace=npm:pace
 
-Either way will work. pace= is the alias or nickname you give the library, so it can be whatever you want. 
+Either way will work. pace= is the alias or nickname you give the library, so it can be whatever you want.
 
 Finally, let's create a simple webpage that will load up all of the javascript libraries using [SystemJS](https://github.com/systemjs/systemjs)
 
@@ -92,7 +96,7 @@ We're almost there. Now we need some way to serve up our website. We will use th
 	npm install browser-sync --save-dev
 
 And the scripts section in your package.json with:
-	
+
 	"scripts": {
 		"serve": "browser-sync start --server --files *.*"
 	},
@@ -105,7 +109,7 @@ If everything is setup properly, your browser should be opened to [http://localh
 
 # Typescript
 
-Now let's add a [Typescript](http://typescriptlang.org) 
+Now let's add a [Typescript](http://typescriptlang.org)
 
 First, add a Typescript configuration file, tsconfig.json:
 
@@ -133,7 +137,7 @@ Now, let's update our tooling:
 	npm install concurrently --save-dev
 
 And replace the scripts section in package.json with:
-	
+
 	"scripts": {
 		"start": "tsc && concurrently \"npm run tsc:w\" \"npm run serve\" ",
 		"postinstall": "typings install",
@@ -146,13 +150,13 @@ And replace the scripts section in package.json with:
 Now, let's add a view model and template to the application. First, add a view model called app.ts:
 
 	import * as toastr from "toastr";
-	
+
 	export class App {
 	  public title: string = "";
 	  public message: string = "";
-	
+
 	  constructor() { }
-	
+
 	  submit() {
 	    if (!this.title && !this.message) {
 	      toastr.error("Please fill in the form!", "error");
@@ -178,7 +182,7 @@ Now, install the type definition files for toastr and jquery:
 	typings install toastr --ambient --save
 	typings install jquery --ambient --save
 
-> Note: If you're behind a firewall, you will need to create a .typingsrc file to register the proxy server so this command will work. It will look a lot like your .npmrc file 
+> Note: If you're behind a firewall, you will need to create a .typingsrc file to register the proxy server so this command will work. It will look a lot like your .npmrc file
 
 	proxy=http://proxy.mycompany.com:8080
 
@@ -186,7 +190,7 @@ Now try it again
 
 	npm run tsc
 
-and you should see app.js generated 
+and you should see app.js generated
 
 In Aurelia, every view model needs a corresponding template file, so let's create app.html:
 
@@ -194,7 +198,7 @@ In Aurelia, every view model needs a corresponding template file, so let's creat
 		<form submit.delegate="submit()">
 			<input type="text" value.bind="title" placeholder="Enter title" />
 			<input type="text" value.bind="message" placeholder="Enter message" />
-			<button type="submit">Show toastr</button>	
+			<button type="submit">Show toastr</button>
 		</form>
 	</template>
 
@@ -234,7 +238,7 @@ And the browser will automatically refresh.
 
 Even though Aurelia offers a comprehensive set of [skeleton projects](http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.2.2/doc/article/getting-started) to kick start your development efforts, I find it useful to walk through the steps myself so I can gain a better understanding of how everything works together. Hopefully, you found this article useful.
 
-Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch). 
+Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch).
 # Acknowledgments
- 
-Thanks to [Florian Verdonck](http://nojaf.com/2015/07/08/using-toastr-with-aurelia/) for a great article that helped me put a lot of these pieces together! 
+
+Thanks to [Florian Verdonck](http://nojaf.com/2015/07/08/using-toastr-with-aurelia/) for a great article that helped me put a lot of these pieces together!
