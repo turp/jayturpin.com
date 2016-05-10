@@ -26,10 +26,10 @@ Just accept all of the defaults. Now we'll install the [jspm](http://jspm.io/). 
 
 	npm install jspm --save-dev
 
-> Note: Depending upon the windows environment I run this command on, sometimes this fails. For instance, on my laptop, I had to run the following commands first inorder to to get it to work properly
+Note: If you get errors while running this command, look at the following things:
 
-	npm install babel-register --save-dev
-	npm install babel --save-dev
+* If you are behind a firewall, make sure you've set your [HTTP_PROXY properly](https://jjasonclark.com/how-to-setup-node-behind-web-proxy) 
+* Add a rule to your virus protection software to exclude the directory you're working with. I've seen some random issues occur while npm is attempting to delete temporary files.   
 
 Now setup jspm:
 
@@ -41,13 +41,8 @@ Now setup jspm:
 	Enter config file path [.\config.js]:
 	Configuration file config.js doesn't exist, create it? [yes]:
 	Enter client baseURL (public folder URL) [/]:
-	Do you wish to use a transpiler? [yes]:
-	Which ES6 transpiler would you like to use, Babel, TypeScript or Traceur? [babel]:typescript
-
-The default transpiler is [Babel](https://babeljs.io/), but I prefer [Typescript](http://typescriptlang.org)
-
-> Note: If you encounter errors running jspm *and* you are behind a firewall, you are probably missing the HTTP\_PROXY environment variable. On windows, try running SET HTTP\_PROXY={YOUR PROXY SERVER} (Example: SET HTTP\_PROXY=http://proxy.mycompany.com:8080)
-
+	Do you wish to use a transpiler? [yes]: NO
+	
 Now pull in Aurelia:
 
 	jspm install aurelia-framework
@@ -94,12 +89,12 @@ We're almost there. Now we need some way to serve up our website. We will use th
 And the scripts section in your package.json with:
 
 	"scripts": {
-		"serve": "browser-sync start --server --files *.*"
+		"start": "browser-sync start --server --files *.*"
 	},
 
 Now let's see if it works
 
-	npm run serve
+	npm run start
 
 If everything is setup properly, your browser should be opened to [http://localhost:3000/](http://localhost:3000/) and you should briefly see a green "Loaded with System" notification pop up for a couple seconds.
 
@@ -122,7 +117,6 @@ First, add a Typescript configuration file, tsconfig.json:
 	  },
 	  "exclude": [
 	    "node_modules",
-	    "jspm_packages",
 	    "typings/main",
 	    "typings/main.d.ts"
 	  ]
@@ -178,6 +172,8 @@ Now, install the type definition files for toastr and jquery:
 
 	typings install toastr --ambient --save
 	typings install jquery --ambient --save
+	typings install es6-shim --ambient --save
+  
 
 > Note: If you're behind a firewall, you will need to create a .typingsrc file to register the proxy server so this command will work. It will look a lot like your .npmrc file
 
@@ -191,23 +187,31 @@ and you should see app.js generated
 
 In Aurelia, every view model needs a corresponding template file, so let's create app.html:
 
-	<template>
-		<form submit.delegate="submit()">
-			<input type="text" value.bind="title" placeholder="Enter title" />
-			<input type="text" value.bind="message" placeholder="Enter message" />
-			<button type="submit">Show toastr</button>
-		</form>
-	</template>
+    <template>
+      <require from="toastr/build/toastr.css"></require>
+      <form submit.delegate="submit()">
+        <input type="text" value.bind="title" placeholder="Enter title" />
+        <input type="text" value.bind="message" placeholder="Enter message" />
+        <button type="submit">Show toastr</button>
+      </form>
+    </template>
+    
+Finally, update the index.html file to bootstrap the Aurelia application. Replace the contents of the file with this:
 
-Finally, update the index.html file to bootstrap the Aurelia application. Replace the body element with this:
-
-    <body aurelia-app>
-        <script src="jspm_packages/system.js" charset="utf-8"></script>
-        <script src="config.js" charset="utf-8"></script>
-        <script type="text/javascript">
-            System.import("aurelia-bootstrapper");
-        </script>
-    </body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>My First Aurelia App</title>
+      </head>
+        <body aurelia-app>
+            <script src="jspm_packages/system.js" charset="utf-8"></script>
+            <script src="config.js" charset="utf-8"></script>
+            <script type="text/javascript">
+                System.import("aurelia-bootstrapper");
+            </script>
+        </body>
+    </html>
 
 Now spin up browser-sync again using your brand new NPM script:
 
@@ -219,15 +223,14 @@ You should now see a page with two text boxes, allowing you to specify the title
 
 If you want to see browser-sync in action, add a header to  the app.html and save the file.
 
-	<template>
-		<h1>Toastr Message Generator</h1>
-		<form submit.delegate="submit()">
-			<input type="text" value.bind="title" placeholder="Enter title" />
-			<input type="text" value.bind="message" placeholder="Enter message" />
-			<button type="submit">Show toastr</button>
-		</form>
-	</template>
-
+    <template>
+      <h1>Toastr Message Generator</h1>
+      <form submit.delegate="submit()">
+        <input type="text" value.bind="title" placeholder="Enter title" />
+        <input type="text" value.bind="message" placeholder="Enter message" />
+        <button type="submit">Show toastr</button>
+      </form>
+    </template>
 
 And the browser will automatically refresh.
 
