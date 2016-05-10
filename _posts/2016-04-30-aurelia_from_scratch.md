@@ -224,6 +224,7 @@ You should now see a page with two text boxes, allowing you to specify the title
 If you want to see browser-sync in action, add a header to  the app.html and save the file.
 
     <template>
+      <require from="toastr/build/toastr.css"></require>
       <h1>Toastr Message Generator</h1>
       <form submit.delegate="submit()">
         <input type="text" value.bind="title" placeholder="Enter title" />
@@ -238,7 +239,7 @@ And the browser will automatically refresh.
 
 Even though Aurelia offers a comprehensive set of [skeleton projects](http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.2.2/doc/article/getting-started) to kick start your development efforts, I find it useful to walk through the steps myself so I can gain a better understanding of how everything works together. Hopefully, you found this article useful.
 
-Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch).
+Source code for this article can be found on [Github](https://github.com/turp/aurelia_from_scratch/tree/basic).
 
 # Acknowledgments
 
