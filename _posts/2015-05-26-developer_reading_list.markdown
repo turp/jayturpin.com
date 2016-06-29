@@ -15,7 +15,7 @@ With that end in mind, I've pulled together some of my favorite articles, books 
 ## Agile
 * [Extreme Programming Explained, v.1](http://www.amazon.com/dp/0201616416) by Kent Beck - one of *the* most influential programming books of the past generation. Beck inspired me, and tens of thousands of developers to write tests, pair program, refactor and write better code. IMHO, this is the book the sparked the entire agile movement. 
 * [The New Methodology](http://martinfowler.com/articles/newMethodology.html) by Martin Fowler - everything Fowler writes is gold. A great article describing agile development (mainly eXtreme Programming).  
-* [All I Really Need to Know about Pair Programming I Learned In Kindergarten](http://collaboration.csc.ncsu.edu/laurie/Papers/Kindergarten.PDF) by Laurie Williams and Robert Kessler
+* [All I Really Need to Know about Pair Programming I Learned In Kindergarten](https://collaboration.csc.ncsu.edu/laurie/Papers/Kindergarten.PDF) by Laurie Williams and Robert Kessler
 
 ## Embrace Your Craft
 * [The Pragmatic Programmer](https://pragprog.com/the-pragmatic-programmer) by Dave Thomas and Andy Hunt - not a programming book, per se, but a book about *how* to be a developer. Outstanding book.
