@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Geek on Jay Turpin</title>
+    <link>http://localhost:1313/categories/geek/</link>
+    <description>Recent content in Geek on Jay Turpin</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/geek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is The Tesla Powerwall Worth It?</title>
+      <link>http://localhost:1313/posts/2015-06-21-is_tesla_powerwall_worth_it/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2015-06-21-is_tesla_powerwall_worth_it/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Tesla Powerwall&#34; loading=&#34;lazy&#34; src=&#34;http://www.teslamotors.com/sites/default/files/images/powerwall/section-hero@2x.jpg&#34;&gt;
+I was listening to the &lt;a href=&#34;http://www.dotnetrocks.com/default.aspx?showNum=1154&#34;&gt;Energy Storage Geek Out&lt;/a&gt; episode on &lt;a href=&#34;http://www.dotnetrocks.com&#34;&gt;dotnetrocks.com&lt;/a&gt; and they were talking about the new &lt;a href=&#34;http://www.teslamotors.com/powerwall&#34;&gt;Tesla Powerwall&lt;/a&gt;. I really love this concept - charge the battery at night when electricity is cheap and then use the power from the battery during peak hours when electricity is expensive. Brilliant!&lt;/p&gt;
+&lt;p&gt;But it got me wondering: does it make financial sense? So I pulled out my calculator and crunched some numbers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

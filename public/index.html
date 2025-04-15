@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Jay Turpin</title>
+
+<meta name="description" content="Jay Turpin&#39;s Personal Blog">
+<meta name="author" content="Jay Turpin">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Jay Turpin (Alt + H)">Jay Turpin</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contributors/" title="Contributors">
+                    <span>Contributors</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Writing Code with DHH: Take 3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I was listening to The Tim Ferris Show with David “DHH” Heinemeier Hansson this weekend. DHH is the creator of Ruby on Rails and the founder of Basecamp (formerly 37signals).
+He described his approach for writing code:
+Take 1: Let’s get this working.
+Take 2: Let’s make this right.
+Take 3: let’s make this beautiful.
+Take 4: Let’s simplify this.
+Take 5: …
+This really resonated with me. So often we (myself included) tend to stop after Take 1. This leads to code that is buggy and difficult to maintain. Only rare individuals ever do three or four takes to create good quality code.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-10-31 00:00:00 +0000 UTC'>October 31, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Writing Code with DHH: Take 3" href="http://localhost:1313/posts/2016-10-31-take-3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Aurelia, With Style
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Building upon the work done in my previous article, let’s add Bootstrap to our application:
+jspm install bootstrapWhile we’re at it, add the Typescript definition file too, just in case we want to programmatically display a modal or popover:
+typings install bootstrap --ambient --saveNow, update the the template, app.html:
+&lt;template&gt;&lt;require from=&#34;bootstrap/css/bootstrap.css&#34;&gt;&lt;/require&gt;&lt;require from=&#34;toastr/build/toastr.css&#34;&gt;&lt;/require&gt;&lt;div class=&#34;container&#34;&gt;&lt;div class=&#34;row&#34;&gt;&lt;div class=&#34;col-md-12&#34;&gt;&lt;h1&gt;Toastr Message Generator&lt;/h1&gt;&lt;form submit.delegate=&#34;submit()&#34; class=&#34;form-inline&#34;&gt;&lt;div class=&#34;form-group&#34;&gt;&lt;label&gt;Title&lt;/label&gt;&lt;input type=&#34;text&#34; value.bind=&#34;title&#34; class=&#34;form-control&#34; placeholder=&#34;Enter title&#34; /&gt;&lt;/div&gt;&lt;div class=&#34;form-group&#34;&gt;&lt;label&gt;Message&lt;/label&gt;&lt;input type=&#34;text&#34; value.bind=&#34;message&#34; class=&#34;form-control&#34; placeholder=&#34;Enter message&#34; /&gt;&lt;/div&gt;&lt;button type=&#34;submit&#34; class=&#34;btn btn-success&#34;&gt;Show Toast&lt;/button&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/template&gt;Mainly, this is just some bootstrap styling around the previous markup. But, you will notice at the top of the template two lines:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-05-07 00:00:00 +0000 UTC'>May 7, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Aurelia, With Style" href="http://localhost:1313/posts/2016-05-07-aurelia_with_style/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Aurelia From Scratch
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Rob Eisenberg first showed up on my radar in 2010 when he presented at the MIX conference. His presentation, Build Your Own MVVM Framework in 500 Lines blew me away.
+You see, at the time, Silverlight was the hot new technology and average developers, like me, struggled to understand all the intricacies of data binding and commands. Rob, without a lot of flash, demonstrated how to get rid of a ton a boilerplate code and simplify wiring up the view model to the view.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-04-30 00:00:00 +0000 UTC'>April 30, 2016</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Aurelia From Scratch" href="http://localhost:1313/posts/2016-04-30-aurelia_from_scratch/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Git Cheatsheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I collected tips and tricks for using Git and Github from many places over the years. This is my attempt to consolidate some of this knowledge into a single spot. I am primarily a Windows user, so some of the file paths may be different in your environment.
+.gitconfig file Add the following lines to your .gitconfig (found in c:\users\your_idsid)
+[user]name = Your Nameemail = your.name@company.com[credential][http]proxy = http://your-proxy.company.com:8080[https]proxy = http://your-proxy.company.com:8080[push]default = simple[url &#34;https://&#34;]insteadOf = git://[alias]co = checkoutec = config --global -eup = !git pull --rebase --prune $@ &amp;&amp; git submodule update --init --recursivecob = checkout -bcm = !git add -A &amp;&amp; git commit -msave = !git add -A &amp;&amp; git commit -m &#39;SAVEPOINT&#39;wip = !git add -u &amp;&amp; git commit -m &#34;WIP&#34;undo = reset HEAD~1 --mixedamend = commit -a --amendnuke = !git reset --hard &amp;&amp; git clean -fdxwipe = !git add -A &amp;&amp; git commit -qm &#39;WIPE SAVEPOINT&#39; &amp;&amp; git reset HEAD~1 --hard &amp;&amp; git clean -fdbclean = &#34;!f() { git branch --merged ${1-master} | grep -v &#34; ${1-master}$&#34; | xargs -r git branch -d; }; f&#34;bdone = &#34;!f() { git checkout ${1-master} &amp;&amp; git up &amp;&amp; git bclean ${1-master}; }; f&#34;squash = !git checkout master &amp;&amp; git merge --no-ff --no-commitWindows Clients First, install Git For Windows). This provides you with the basic command line tools needed to interact with Git and Github.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-04-23 00:00:00 +0000 UTC'>April 23, 2016</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to My Git Cheatsheet" href="http://localhost:1313/posts/2016-04-23-my_git_cheatsheet/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Christmas Lights with Raspberry Pi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I finally caught the bug. After seeing a neighbor choreograph his entire outdoor light display with music, I set about trying to figure out how to do something similar. I’m starting small, just trying to automate 6-8 different sets of lights on a tree, but you never know where this will end.
+After a quick google search, I stumbled upon this article on by Osprey22 on Instructables Raspberry Pi Christmas Tree Light Show
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-12-12 00:00:00 +0000 UTC'>December 12, 2015</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Christmas Lights with Raspberry Pi" href="http://localhost:1313/posts/2015-12-12-raspberry-pi/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Is The Tesla Powerwall Worth It?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I was listening to the Energy Storage Geek Out episode on dotnetrocks.com and they were talking about the new Tesla Powerwall. I really love this concept - charge the battery at night when electricity is cheap and then use the power from the battery during peak hours when electricity is expensive. Brilliant!
+But it got me wondering: does it make financial sense? So I pulled out my calculator and crunched some numbers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 00:00:00 +0000 UTC'>June 21, 2015</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Is The Tesla Powerwall Worth It?" href="http://localhost:1313/posts/2015-06-21-is_tesla_powerwall_worth_it/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Developer Reading List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Developers need to learn many things: how to write clean code; how to test; how to automate the build; the basics of design; the syntax and idiosyncrasies of language(s) they are working in. Many companies assume that college graduates already know most of this information.
+Robert C “Uncle Bob” Martin once compared software development to martial arts. He likened college grads to white or gold belt level. They know the basic kicks and punches, but still have a long way to go before they can be considered black belts. The only way to get to that level if through experience and learning from higher level practitioners.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-05-26 00:00:00 +0000 UTC'>May 26, 2015</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Developer Reading List" href="http://localhost:1313/posts/2015-05-26-developer_reading_list/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting up a blog on Github
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>While this is certainly not new, it was new for me. So I wanted to make sure I recorded what I learned this weekend.
+Some Context I was having lunch with a co-worker a couple weeks ago and he started talking about hosting websites on Github. I’ve been thinking about starting a blog over the past few months, but just haven’t been able to decide on the right platform to host it on. I’ve played around with Weebly, Squarespace and even Ghost hosted on Azure, but I was looking for low cost and a reasonable level of control and none of them quite fit the bill.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-05-24 00:00:00 +0000 UTC'>May 24, 2015</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Setting up a blog on Github" href="http://localhost:1313/posts/2015-05-24-setting_up_blog_on_github/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Welcome
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> My name is Jay Turpin. I’m a big dog owner, beer brewer, father of two and husband of one for over two decades. I have been developing software since 1993, and am passionate about new technologies and practices.
+As a software developer currently working at Intel Corporation, I am an outspoken proponent of agile practices and have been employed them on over a half dozen teams since 2001.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-05-17 00:00:00 +0000 UTC'>May 17, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jay Turpin</footer>
+  <a class="entry-link" aria-label="post link to Welcome" href="http://localhost:1313/posts/2015-05-17-welcome/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Jay Turpin</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

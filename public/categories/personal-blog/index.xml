@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Personal Blog on Jay Turpin</title>
+    <link>http://localhost:1313/categories/personal-blog/</link>
+    <description>Recent content in Personal Blog on Jay Turpin</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/personal-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contributors</title>
+      <link>http://localhost:1313/contributors/</link>
+      <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contributors/</guid>
+      <description>&lt;p&gt;Being a mentor or inspiration is largely a thankless job: your thoughts, ideas and suggestions are given out freely and incorporated into the lives and work habits of the people that listened. Sometimes they remember it was your idea. Other times, they forget where the wisdom came from (but it transformed their lives). And sometimes they completely forget that the idea came from anywhere but their own mind.&lt;/p&gt;
+&lt;p&gt;So, before I go any further, I want to thank all of those people who have helped along in my journey as a software developer. Your collective guidance has helped me get where I am today. Thanks you!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

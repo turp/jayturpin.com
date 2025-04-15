@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Clean Code on Jay Turpin</title>
+    <link>http://localhost:1313/categories/clean-code/</link>
+    <description>Recent content in Clean Code on Jay Turpin</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/clean-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing Code with DHH: Take 3</title>
+      <link>http://localhost:1313/posts/2016-10-31-take-3/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2016-10-31-take-3/</guid>
+      <description>&lt;p&gt;I was listening to &lt;a href=&#34;http://fourhourworkweek.com/2016/10/27/david-heinemeier-hansson&#34;&gt;The Tim Ferris Show&lt;/a&gt; with David &amp;ldquo;DHH&amp;rdquo; Heinemeier Hansson this weekend. DHH is the creator of &lt;a href=&#34;http://rubyonrails.org&#34;&gt;Ruby on Rails&lt;/a&gt; and the founder of &lt;a href=&#34;https://basecamp.com&#34;&gt;Basecamp&lt;/a&gt; (formerly &lt;a href=&#34;http://fourhourworkweek.com/2010/03/08/why-grow-and-other-wisdom-from-37signals&#34;&gt;37signals&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;He described his approach for writing code:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Take 1: Let&amp;rsquo;s get this working.&lt;/p&gt;
+&lt;p&gt;Take 2: Let&amp;rsquo;s make this right.&lt;/p&gt;
+&lt;p&gt;Take 3: let&amp;rsquo;s make this beautiful.&lt;/p&gt;
+&lt;p&gt;Take 4: Let&amp;rsquo;s simplify this.&lt;/p&gt;
+&lt;p&gt;Take 5: &amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This really resonated with me. So often we (myself included) tend to stop after Take 1. This leads to code that is buggy and difficult to maintain. Only rare individuals ever do three or four takes to create good quality code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
