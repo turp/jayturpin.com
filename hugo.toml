@@ -1,17 +1,44 @@
 baseURL = "https://jayturpin.com/"
 languageCode = "en-us"
 title = "Jay Turpin"
-theme = "PaperMod"
+theme = "congo"
+defaultContentLanguage = "en"
 
 [params]
   description = "Jay Turpin's Personal Blog"
-  author = "Jay Turpin"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
+  
+  [params.author]
+    name = "Jay Turpin"
+    image = "JayTurpin-300x300.jpg"
+    headline = "Software Engineer & Technology Enthusiast"
+    links = [
+      { github = "https://github.com/turp" },
+      { twitter = "https://x.com/turp" },
+      { linkedin = "https://www.linkedin.com/in/jayturpin/" },
+      
+    ]
+  
+  [params.homepage]
+    layout = "page"
+    showRecent = true
+    
+  [params.article]
+    showDate = true
+    showAuthor = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+    
+  [params.header]
+    layout = "basic"
+    
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
   
 [menu]
   [[menu.main]]
