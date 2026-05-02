@@ -1,5 +1,7 @@
 dist/
 node_modules/
+.astro/
+public/pagefind/
 .env
 .env.*
 !.env.example
