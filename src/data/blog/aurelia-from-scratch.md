@@ -10,6 +10,7 @@ tags:
   - aurelia
 description: Getting started with Aurelia, a modern JavaScript framework by Rob Eisenberg.
 ---
+
 [Rob Eisenberg](http://eisenbergeffect.bluespire.com/) first showed up on my radar in 2010 when he presented at the MIX conference. His presentation, [Build Your Own MVVM Framework in 500 Lines](http://channel9.msdn.com/Events/MIX/MIX10/EX15) blew me away.
 
 You see, at the time, Silverlight was the hot new technology and average developers, like me, struggled to understand all the intricacies of data binding and commands. Rob, without a lot of flash, demonstrated how to get rid of a ton a boilerplate code and simplify wiring up the view model to the view.

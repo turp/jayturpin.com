@@ -10,6 +10,7 @@ tags:
   - aurelia
 description: Adding Bootstrap styling and navigation to an Aurelia application.
 ---
+
 Building upon the work done in my [previous article](http://jayturpin.com/archive/2016/04/30/aurelia_from_scratch), let's add [Bootstrap](http://getbootstrap.com/) to our application:
 
     jspm install bootstrap

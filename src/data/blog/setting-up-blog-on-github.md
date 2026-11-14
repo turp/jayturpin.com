@@ -9,6 +9,7 @@ tags:
   - blogging
 description: A walkthrough of setting up a personal blog hosted on GitHub Pages using Jekyll.
 ---
+
 While this is certainly not new, it was new for me. So I wanted to make sure I recorded what I learned this weekend.
 
 # Some Context
