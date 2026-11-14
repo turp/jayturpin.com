@@ -10,6 +10,7 @@ tags:
   - development
 description: A consolidated reference of useful Git tips, tricks, and configurations collected over the years.
 ---
+
 I collected tips and tricks for using [Git](https://git-scm.com/) and [Github](https://github.com) from many places over the years. This is my attempt to consolidate some of this knowledge into a single spot. I am primarily a Windows user, so some of the file paths may be different in your environment.
 
 ## .gitconfig file

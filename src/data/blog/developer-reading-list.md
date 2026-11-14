@@ -9,6 +9,7 @@ tags:
   - agile development
 description: A curated collection of books, articles, and videos for becoming a better software developer.
 ---
+
 Developers need to learn many things: how to write clean code; how to test; how to automate the build; the basics of design; the syntax and idiosyncrasies of language(s) they are working in. Many companies assume that college graduates already know most of this information.
 
 Robert C "Uncle Bob" Martin once compared software development to martial arts. He likened college grads to white or gold belt level. They know the basic kicks and punches, but still have a long way to go before they can be considered black belts. The only way to get to that level if through experience and learning from higher level practitioners.

@@ -9,6 +9,7 @@ tags:
   - geek
 description: Crunching the numbers on whether the Tesla Powerwall makes financial sense for a typical household.
 ---
+
 ![Tesla Powerwall](http://www.teslamotors.com/sites/default/files/images/powerwall/section-hero@2x.jpg)
 I was listening to the [Energy Storage Geek Out](http://www.dotnetrocks.com/default.aspx?showNum=1154) episode on [dotnetrocks.com](http://www.dotnetrocks.com) and they were talking about the new [Tesla Powerwall](http://www.teslamotors.com/powerwall). I really love this concept - charge the battery at night when electricity is cheap and then use the power from the battery during peak hours when electricity is expensive. Brilliant!
 

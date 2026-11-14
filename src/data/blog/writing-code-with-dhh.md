@@ -9,6 +9,7 @@ tags:
   - clean code
 description: Reflections on DHH's three-take approach to writing clean, well-crafted code.
 ---
+
 I was listening to [The Tim Ferris Show](http://fourhourworkweek.com/2016/10/27/david-heinemeier-hansson) with David "DHH" Heinemeier Hansson this weekend. DHH is the creator of [Ruby on Rails](http://rubyonrails.org) and the founder of [Basecamp](https://basecamp.com) (formerly [37signals](http://fourhourworkweek.com/2010/03/08/why-grow-and-other-wisdom-from-37signals)).
 
 He described his approach for writing code:

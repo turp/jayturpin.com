@@ -11,6 +11,7 @@ tags:
   - christmas
 description: Building a choreographed holiday light show using a Raspberry Pi and relay modules.
 ---
+
 I finally caught the bug. After seeing a neighbor choreograph his entire outdoor light display with music, I set about trying to figure out how to do something similar. I'm starting small, just trying to automate 6-8 different sets of lights on a tree, but you never know where this will end.
 
 After a quick google search, I stumbled upon this article on by [Osprey22](http://www.instructables.com/member/Osprey22/) on Instructables [Raspberry Pi Christmas Tree Light Show](http://www.instructables.com/id/Raspberry-Pi-Christmas-Tree-Light-Show/?ALLSTEPS)
